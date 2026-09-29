@@ -1,0 +1,29 @@
+{
+  "name": "id-vp",
+  "version": "1.0.0",
+  "description": "Õppetöö raames tehtud veeb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://melanisulengo@github.com/melanisulengo/ID-vp.git"
+  },
+  "keywords": [
+    "tlu",
+    "dti",
+    "veeb",
+    "oppetoo"
+  ],
+  "author": "Melani Sulengo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melanisulengo/ID-vp/issues"
+  },
+  "homepage": "https://github.com/melanisulengo/ID-vp#readme",
+  "dependencies": {
+    "ejs": "^6.0.1",
+    "express": "^5.2.1"
+  }
+}
