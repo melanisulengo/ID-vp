@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+	<meta charset="utf-8">
+	<title>Melani, veebiprogrammeerimine</title>
+</head>
+<body>
+	<img src="../pic/veebiprogrammeerimine_2026_ID.png" alt=""><br> 
+	<ul>
+		<li><a href="/">Avaleht</a></li>
+		<li><a href="/vanasona">Vanasõnad</a></li>
+		<li><a href="/regvisit">Registreeri külastus</a></li>
+		<li><a href="/oppimineTLU">Õppimine TLÜs</a></li>
+		<li><a href="/viimanekulastus">Viimane külastus</a></li>
+		<li><a href="/eestifilm">Eesti film</a></li>
+	</ul><hr>
+	<h1>Eesti filmid</h1>
+	<ul>
+		<li><a href="/eestifilm">Tagasi Eesti filmi lehele</a></li>
+	</ul>
+	<hr>
+	<ol>
+		<% movieList.forEach(function(movie) { %>
+			<li><%=movie.title %>, <%=movie.release_year %>, <%= movie.duration_minutes %> min</li>
+		<% }); %>
+	</ol>
+</body>
+</html>

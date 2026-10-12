@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+	<meta charset="utf-8">
+	<title>Melani, veebiprogrammeerimine</title>
+</head>
+<body>
+	<img src="../pic/veebiprogrammeerimine_2026_ID.png" alt=""><br> 
+	<ul>
+		<li><a href="/">Avaleht</a></li>
+		<li><a href="/vanasona">Vanasõnad</a></li>
+		<li><a href="/regvisit">Registreeri külastus</a></li>
+		<li><a href="/oppimineTLU">Õppimine TLÜs</a></li>
+		<li><a href="/viimanekulastus">Viimane külastus</a></li>
+		<li><a href="/eestifilm">Eesti film</a></li>
+	</ul><hr>
+	<h1>Lisa Eesti filme</h1>
+	<ul>
+		<li><a href="/eestifilm">Tagasi Eesti filmi lehele</a></li>
+	</ul>
+	<hr>
+	<form method="POST">
+		<label for="titleInput">Pealkiri</label>
+		<input id="titleInput" name="titleInput" type="text" placeholder="Filmi pealkiri" required value="<%=titleInput %>">
+		<br>
+		<label for="releaseYearInput">Väljalaskmise aasta</label>
+		<input id="releaseYearInput" name="releaseYearInput" type="text" required value="<%=releaseYearInput %>">
+		<br>
+		<label for="durationInput">Kestvus minutites</label>
+		<input id="durationInput" name="durationInput" type="text" placeholder="Filmi kestvus" required value="<%=durationInput %>">
+		<br>
+		<label for="descriptionInput">Kirjeldus</label>
+		<input id="descriptionInput" name="descriptionInput" type="text" placeholder="Filmi kirjeldus" value="<%=descriptionInput %>">
+		<br>
+		<input id="movieSubmit" name="movieSubmit" type="submit" value="Salvesta">
+	</form>
+	<p><%=notice %></p>
+</body>
+</html>
